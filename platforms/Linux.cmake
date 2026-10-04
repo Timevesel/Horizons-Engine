@@ -3,7 +3,12 @@
 
 find_package(PkgConfig REQUIRED)
 
-add_executable(RetroEngine ${RETRO_FILES})
+add_executable(RetroEngine ${RETRO_FILES}
+        ../RSDKv4/Scripts/Functions.cpp
+        ../RSDKv4/Scripts/Functions.h
+        ../RSDKv4/Scripts/Variables.cpp
+        ../RSDKv4/Scripts/Variables.h
+        ../RSDKv4/Scripts/Functions.cpp)
 
 pkg_check_modules(OGG ogg)
 

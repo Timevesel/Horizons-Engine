@@ -24,71 +24,71 @@ set(RETRO_NAME "RSDKv4")
 set(RETRO_OUTPUT_NAME ${RETRO_NAME} CACHE STRING "The exported name of the executable.")
 
 set(RETRO_FILES
-    dependencies/all/tinyxml2/tinyxml2.cpp
-    RSDKv4/Animation.cpp
-    RSDKv4/Audio.cpp
-    RSDKv4/Collision.cpp
-    RSDKv4/Debug.cpp
-    RSDKv4/Drawing.cpp
-    RSDKv4/Ini.cpp
-    RSDKv4/Input.cpp
-    RSDKv4/fcaseopen.c
-    RSDKv4/main.cpp
-    RSDKv4/Math.cpp
-    RSDKv4/ModAPI.cpp
-    RSDKv4/Networking.cpp
-    RSDKv4/Object.cpp
-    RSDKv4/Palette.cpp
-    RSDKv4/Reader.cpp
-    RSDKv4/Renderer.cpp
-    RSDKv4/RetroEngine.cpp
-    RSDKv4/Scene.cpp
-    RSDKv4/Scene3D.cpp
-    RSDKv4/Script.cpp
-    RSDKv4/Sprite.cpp
-    RSDKv4/String.cpp
-    RSDKv4/Text.cpp
-    RSDKv4/Userdata.cpp
-    RSDKv4/NativeObjects/AboutScreen.cpp
-    RSDKv4/NativeObjects/AchievementDisplay.cpp
-    RSDKv4/NativeObjects/AchievementsButton.cpp
-    RSDKv4/NativeObjects/AchievementsMenu.cpp
-    RSDKv4/NativeObjects/BackButton.cpp
-    RSDKv4/NativeObjects/CWSplash.cpp
-    RSDKv4/NativeObjects/CreditText.cpp
-    RSDKv4/NativeObjects/DialogPanel.cpp
-    RSDKv4/NativeObjects/FadeScreen.cpp
-    RSDKv4/NativeObjects/InstructionsScreen.cpp
-    RSDKv4/NativeObjects/LeaderboardsButton.cpp
-    RSDKv4/NativeObjects/MenuBG.cpp
-    RSDKv4/NativeObjects/MenuControl.cpp
-    RSDKv4/NativeObjects/ModInfoButton.cpp
-    RSDKv4/NativeObjects/ModsButton.cpp
-    RSDKv4/NativeObjects/ModsMenu.cpp
-    RSDKv4/NativeObjects/MultiplayerButton.cpp
-    RSDKv4/NativeObjects/MultiplayerHandler.cpp
-    RSDKv4/NativeObjects/MultiplayerScreen.cpp
-    RSDKv4/NativeObjects/OptionsButton.cpp
-    RSDKv4/NativeObjects/OptionsMenu.cpp
-    RSDKv4/NativeObjects/PauseMenu.cpp
-    RSDKv4/NativeObjects/PlayerSelectScreen.cpp
-    RSDKv4/NativeObjects/PushButton.cpp
-    RSDKv4/NativeObjects/RecordsScreen.cpp
-    RSDKv4/NativeObjects/RetroGameLoop.cpp
-    RSDKv4/NativeObjects/SaveSelect.cpp
-    RSDKv4/NativeObjects/SegaIDButton.cpp
-    RSDKv4/NativeObjects/SegaSplash.cpp
-    RSDKv4/NativeObjects/SettingsScreen.cpp
-    RSDKv4/NativeObjects/StaffCredits.cpp
-    RSDKv4/NativeObjects/StartGameButton.cpp
-    RSDKv4/NativeObjects/SubMenuButton.cpp
-    RSDKv4/NativeObjects/TextLabel.cpp
-    RSDKv4/NativeObjects/TimeAttack.cpp
-    RSDKv4/NativeObjects/TimeAttackButton.cpp
-    RSDKv4/NativeObjects/TitleScreen.cpp
-    RSDKv4/NativeObjects/VirtualDPad.cpp
-    RSDKv4/NativeObjects/VirtualDPadM.cpp
-    RSDKv4/NativeObjects/ZoneButton.cpp
+        dependencies/all/tinyxml2/tinyxml2.cpp
+        RSDKv4/Drawing/Animation.cpp
+        RSDKv4/Audio.cpp
+        RSDKv4/Objects/Collision.cpp
+        RSDKv4/Debug.cpp
+        RSDKv4/Drawing/Drawing.cpp
+        RSDKv4/Text/Ini.cpp
+        RSDKv4/Input.cpp
+        RSDKv4/fcaseopen.c
+        RSDKv4/main.cpp
+        RSDKv4/Math.cpp
+        RSDKv4/ModAPI.cpp
+        RSDKv4/Networking.cpp
+        RSDKv4/Objects/Object.cpp
+        RSDKv4/Drawing/Palette.cpp
+        RSDKv4/Text/Reader.cpp
+        RSDKv4/Drawing/Renderer.cpp
+        RSDKv4/RetroEngine.cpp
+        RSDKv4/Scenes/Scene.cpp
+        RSDKv4/Scenes/Scene3D.cpp
+        RSDKv4/Scripts/Script.cpp
+        RSDKv4/Drawing/Sprite.cpp
+        RSDKv4/Text/String.cpp
+        RSDKv4/Text/Text.cpp
+        RSDKv4/Text/Userdata.cpp
+        RSDKv4/NativeObjects/AboutScreen.cpp
+        RSDKv4/NativeObjects/AchievementDisplay.cpp
+        RSDKv4/NativeObjects/AchievementsButton.cpp
+        RSDKv4/NativeObjects/AchievementsMenu.cpp
+        RSDKv4/NativeObjects/BackButton.cpp
+        RSDKv4/NativeObjects/CWSplash.cpp
+        RSDKv4/NativeObjects/CreditText.cpp
+        RSDKv4/NativeObjects/DialogPanel.cpp
+        RSDKv4/NativeObjects/FadeScreen.cpp
+        RSDKv4/NativeObjects/InstructionsScreen.cpp
+        RSDKv4/NativeObjects/LeaderboardsButton.cpp
+        RSDKv4/NativeObjects/MenuBG.cpp
+        RSDKv4/NativeObjects/MenuControl.cpp
+        RSDKv4/NativeObjects/ModInfoButton.cpp
+        RSDKv4/NativeObjects/ModsButton.cpp
+        RSDKv4/NativeObjects/ModsMenu.cpp
+        RSDKv4/NativeObjects/MultiplayerButton.cpp
+        RSDKv4/NativeObjects/MultiplayerHandler.cpp
+        RSDKv4/NativeObjects/MultiplayerScreen.cpp
+        RSDKv4/NativeObjects/OptionsButton.cpp
+        RSDKv4/NativeObjects/OptionsMenu.cpp
+        RSDKv4/NativeObjects/PauseMenu.cpp
+        RSDKv4/NativeObjects/PlayerSelectScreen.cpp
+        RSDKv4/NativeObjects/PushButton.cpp
+        RSDKv4/NativeObjects/RecordsScreen.cpp
+        RSDKv4/NativeObjects/RetroGameLoop.cpp
+        RSDKv4/NativeObjects/SaveSelect.cpp
+        RSDKv4/NativeObjects/SegaIDButton.cpp
+        RSDKv4/NativeObjects/SegaSplash.cpp
+        RSDKv4/NativeObjects/SettingsScreen.cpp
+        RSDKv4/NativeObjects/StaffCredits.cpp
+        RSDKv4/NativeObjects/StartGameButton.cpp
+        RSDKv4/NativeObjects/SubMenuButton.cpp
+        RSDKv4/NativeObjects/TextLabel.cpp
+        RSDKv4/NativeObjects/TimeAttack.cpp
+        RSDKv4/NativeObjects/TimeAttackButton.cpp
+        RSDKv4/NativeObjects/TitleScreen.cpp
+        RSDKv4/NativeObjects/VirtualDPad.cpp
+        RSDKv4/NativeObjects/VirtualDPadM.cpp
+        RSDKv4/NativeObjects/ZoneButton.cpp
 )
 
 if(NOT PLATFORM)
@@ -112,6 +112,7 @@ if(COMPILE_OGG)
         STATIC
         ${OGG_DIR}/src/bitwise.c
         ${OGG_DIR}/src/framing.c
+            RSDKv4/Scripts/Functions.cpp
     )
 
     target_compile_options(libogg PRIVATE ${OGG_FLAGS})
@@ -149,6 +150,7 @@ if(COMPILE_VORBIS)
         ${VORBIS_DIR}/lib/vorbisenc.c
         ${VORBIS_DIR}/lib/vorbisfile.c
         ${VORBIS_DIR}/lib/window.c
+            RSDKv4/Scripts/Functions.cpp
     )
 
     target_compile_options(libvorbis PRIVATE ${VORBIS_FLAGS})
